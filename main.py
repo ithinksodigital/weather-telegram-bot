@@ -44,7 +44,7 @@ def getLocation(bot, update, user_data):
     msg = update.message
     user_data['msg'] = msg
     user_data['id'] = update.update_id
-    update.message.reply_text('lat: {}, lng: {}'.format(
+    update.message.reply_text('Checking weather by geographic coordinates lat: {}, lng: {}'.format(
         msg.location.latitude, msg.location.longitude))
     try:
         print(API_URL_LOC.format(msg.location.latitude, msg.location.longitude, API_KEY))
