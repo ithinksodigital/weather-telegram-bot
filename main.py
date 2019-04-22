@@ -34,7 +34,7 @@ def weather_check(bot, update, args):
         resp = ("Current temperature in %s, %s is %s C. \nAtmospheric pressure %s hPa\n%s" % (user_says, country, temp, pressure, desc.capitalize()))
         bot.send_message(chat_id=chat_id, text=resp)
     except KeyError:
-        resp = ("City not found. We do not weather have data for %s. Please try agin using different city. " % user_says)
+        resp = ("City not found. We do not have weather data for %s. Please try agin using different city. " % user_says)
         bot.send_message(chat_id=chat_id, text=resp)
 
 
