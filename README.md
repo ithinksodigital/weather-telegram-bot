@@ -1,7 +1,7 @@
 # telegramWeather
 
 
-![](recording.gif)
+![](rec.gif)
 
 
 
