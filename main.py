@@ -19,7 +19,8 @@ def query_api(city):
 
 def start(bot, update):
     chat_id = update.message.chat_id
-    bot.send_message(chat_id=chat_id, text="To start type /pogoda city_name and check the weather")
+    user_name = update.message.from_user.first_name
+    bot.send_message(chat_id=chat_id, text="Hi %s to start type /pogoda city_name and check the weather" % user_name)
 
 def weather_check(bot, update, args):
     try:
